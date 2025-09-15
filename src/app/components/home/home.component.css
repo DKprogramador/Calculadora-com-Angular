@@ -1,0 +1,77 @@
+/* cobre 100% da viewport e evita scroll */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* usa 100svh p/ mobile moderno (evita saltos com barra de endereços) */
+main {
+  min-height: 100svh;
+  background-image: url(https://plus.unsplash.com/premium_photo-1701590725721-add548ecdf61?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGxhbm8lMjBkZSUyMGZ1bmRvJTIwd2Vic2l0ZXxlbnwwfHwwfHx8MA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* central, responsivo e com “vidro fosco” */
+.container {
+  width: clamp(280px, 32vw, 480px); /* min 280, ideal 32% da tela, máx 480 */
+  padding: 28px 24px;
+  border-radius: 32px;
+
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+
+/* inputs mais legíveis e clicáveis */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+input {
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.15);
+  padding: 0 12px;
+  outline: none;
+}
+input:focus {
+  border-color: rgba(0,0,0,.35);
+  box-shadow: 0 0 0 3px rgba(0,0,0,.08);
+}
+
+/* botões consistentes */
+.button-container {
+  display: grid;
+  gap: 10px;
+}
+button {
+  height: 36px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+button:hover { background-color: rgba(0,0,0,.05); transform: scale(1.05);}
+button:active { transform: translateY(1px); }
+
+/* ajuste fino em telas pequenas */
+@media (max-width: 480px) {
+  .container { width: 92vw; padding: 20px; border-radius: 24px; }
+}
