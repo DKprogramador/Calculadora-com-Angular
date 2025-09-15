@@ -50,7 +50,7 @@ src/
 
 ## 📷 Demonstração da Interface
 
-![Calculadora Angular](./docs/demo.png)
+![Calculadora Angular](./public/demo/demo.png)
 *(exemplo de como a aplicação se apresenta no navegador)*
 
 ---
