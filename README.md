@@ -96,5 +96,3 @@ Projeto desenvolvido como exercício prático de **Angular**.
 
 ---
 
-👉 Quer que eu já te entregue este **README.md em formato de arquivo pronto** (`.md`) para você só colar no seu repositório?
-
