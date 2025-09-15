@@ -1,63 +1,100 @@
-# MeuPrimeiroApp
+# 📘 Calculadora em Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+## 📌 Descrição
 
-## Development server
+Este projeto é uma **calculadora básica** desenvolvida em **Angular**, com interface simples e moderna utilizando conceitos de **Glassmorphism** no CSS.
+A aplicação permite realizar as quatro operações aritméticas fundamentais:
 
-To start a local development server, run:
+* ➕ Adição
+* ➖ Subtração
+* ✖️ Multiplicação
+* ➗ Divisão
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+* **Angular**  (Framework principal)
+* **TypeScript** (Linguagem principal)
+* **HTML5 / CSS3** (Estrutura e estilização)
+* **ngModel (FormsModule)** para **two-way data binding**
+* Efeito visual com **backdrop-filter (Glassmorphism)**
+
+---
+
+## 📂 Estrutura do Projeto
+
+```
+src/
+ ├── app/
+ │   ├── app.component.ts      # Lógica principal da calculadora
+ │   ├── app.component.html    # Estrutura da interface
+ │   ├── app.component.css     # Estilos visuais (Glassmorphism)
+ │   └── app.module.ts         # Configuração do módulo Angular
+ ├── assets/                   # Imagens e recursos estáticos
+ ├── index.html                # Página inicial
+ └── styles.css                # Estilos globais
+```
+
+---
+
+## ⚙️ Funcionalidades
+
+✅ Inserir dois números através de campos de input
+✅ Executar operações aritméticas ao clicar nos botões correspondentes
+✅ Exibir o resultado dinamicamente na tela
+✅ Estilo moderno com **efeito de vidro fosco (Glassmorphism)**
+✅ Layout responsivo, adaptável a dispositivos móveis
+
+---
+
+## 📷 Demonstração da Interface
+
+![Calculadora Angular](./docs/demo.png)
+*(exemplo de como a aplicação se apresenta no navegador)*
+
+---
+
+## ▶️ Como Executar o Projeto
+
+### 1. Clonar o repositório
+
+```bash
+git clone https://github.com/seu-usuario/calculadora-angular.git
+cd calculadora-angular
+```
+
+### 2. Instalar dependências
+
+```bash
+npm install
+```
+
+### 3. Rodar o servidor de desenvolvimento
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Acesse no navegador:
+👉 `http://localhost:4200/`
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🔮 Melhorias Futuras
 
-```bash
-ng generate component component-name
-```
+* [ ] Implementar operações avançadas (potenciação, raiz quadrada, porcentagem)
+* [ ] Adicionar histórico de cálculos
+* [ ] Criar testes unitários com Jasmine/Karma
+* [ ] Suporte a teclado (digitar números e operações)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 👨‍💻 Autor
 
-## Building
+Projeto desenvolvido como exercício prático de **Angular**.
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+👉 Quer que eu já te entregue este **README.md em formato de arquivo pronto** (`.md`) para você só colar no seu repositório?
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-
-1. Calculadora
-
-Desenvolva uma calculadora básica para realizar operações aritméticas.
